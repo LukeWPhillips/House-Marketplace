@@ -92,7 +92,7 @@ function SignUp() {
           <input
             type="text"
             placeholder="Name"
-            // id needs toi be the same as whats in the state
+            // id needs to be the same as whats in the state
             id="name"
             value={name}
             className="nameInput"

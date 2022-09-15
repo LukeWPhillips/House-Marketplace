@@ -71,8 +71,6 @@ function CreateListing() {
     return () => {
       isMounted.current = false;
     };
-    // this line below stops a particular warning
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isMounted]);
 
   //   event functions
