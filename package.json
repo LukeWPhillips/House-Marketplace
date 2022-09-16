@@ -1,6 +1,7 @@
 {
+  "homepage": "https://lukewphillips.github.io/House-Marketplace/ ",
   "name": "house-marketplace",
-  
+
   "version": "0.1.0",
   "private": true,
   "dependencies": {
