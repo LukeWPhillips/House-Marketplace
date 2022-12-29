@@ -14,14 +14,15 @@ import { v4 as uuidv4 } from "uuid";
 import Spinner from "../components/Spinner";
 
 function EditListing() {
+  // eslint-disable-next-line
   const [geolocationEnabled, setGeoLocationEnabled] = useState(false);
   const [loading, setLoading] = useState(false);
   const [listing, setListing] = useState(false);
   const [formData, setFormData] = useState({
     type: "rent",
     name: "",
-    bedrooms: 1,
-    bathrooms: 1,
+    bedrooms: "",
+    bathrooms: "",
     parking: false,
     furnished: false,
     address: "",

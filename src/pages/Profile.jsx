@@ -17,6 +17,7 @@ import { toast } from "react-toastify";
 import ListingItem from "../components/ListingItem";
 import arrowRight from "../assets/svg/keyboardArrowRightIcon.svg";
 import homeIcon from "../assets/svg/homeIcon.svg";
+import Footer from "../components/Footer";
 
 function Profile() {
   const auth = getAuth();
@@ -178,6 +179,7 @@ function Profile() {
             </ul>
           </>
         )}
+        <Footer />
       </main>
     </div>
   );

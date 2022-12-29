@@ -14,6 +14,7 @@ import { v4 as uuidv4 } from "uuid";
 import Spinner from "../components/Spinner";
 
 function CreateListing() {
+  // eslint-disable-next-line
   const [geolocationEnabled, setGeoLocationEnabled] = useState(false);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -71,6 +72,7 @@ function CreateListing() {
     return () => {
       isMounted.current = false;
     };
+    // eslint-disable-next-line
   }, [isMounted]);
 
   //   event functions
@@ -228,7 +230,7 @@ if type(in state ) is set to sale change style if not formbutton style
 rent button changes the style because the state-type is set to rent
 make sure ids match WHAT IT IOS IN THE STATE */}
 
-      <main>
+      <main className="createListing">
         <form onSubmit={onSubmit}>
           <label className="formLabel">Sell / Rent</label>
           <div className="formButtons">
@@ -260,7 +262,7 @@ make sure ids match WHAT IT IOS IN THE STATE */}
             value={name}
             onChange={onMutate}
             maxLength="32"
-            minLength="10"
+            minLength="2"
             required
           />
           {/* FLEX MAKES THEM SIDE BY SIDE */}

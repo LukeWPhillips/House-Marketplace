@@ -44,15 +44,12 @@ function Listing() {
 
   return (
     <main>
-      {/* <Helmet>
-        <title>{listing.name}</title>
-      </Helmet> */}
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         slidesPerView={1}
         pagination={{ clickable: true }}
         navigation
-        style={{ height: "300px" }}
+        style={{ height: "500px" }}
       >
         {listing.imageUrls.map((url, index) => {
           return (
@@ -61,7 +58,10 @@ function Listing() {
                 className="swiperSlideDiv"
                 style={{
                   background: `url(${listing.imageUrls[index]}) center no-repeat`,
-                  backgroundSize: "cover",
+                  backgroundSize: "60%",
+                  backgroundPosition: "50% 50%",
+                  webkitFilter: "blur(0px)",
+                  imageRendering: "-webkit-optimize-contrast",
                 }}
               ></div>
             </SwiperSlide>
